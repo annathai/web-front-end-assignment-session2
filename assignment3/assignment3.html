@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Session2: Assignment3: object</title>
+</head>
+<body>
+    <div>
+        First Name: <input type="text" id="firstName"/>
+        <br/> <br/>
+        Last Name: <input type="text" id="lastName"/>
+        <br/> <br/>
+        Email: <input type="email" id="email"/>
+        <br/> <br/>
+        Phone: <input type="phone" id="phone"/>
+        <br/> <br/>
+    </div>
+
+    <script type="text/javascript">
+        var person = {
+            firstName: 'John',
+            lastName: 'Smith',
+            email: 'john.smith@gmail.com',
+            phone: '111-222-3333'
+        }
+        document.getElementById("firstName").value = person.firstName;
+        document.getElementById("lastName").value = person.lastName;
+        document.getElementById("email").value = person.email;
+        document.getElementById("phone").value = person.phone;
+    </script>
+</body>
+</html>

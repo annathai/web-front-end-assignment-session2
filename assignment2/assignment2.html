@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Session2: Assignment2: Closures</title>
+</head>
+<body>
+<script type="text/javascript">
+    function outerFunc(param1) {
+        function innerFunc(param2) {
+            var result = param1 * param2;
+            alert("multiplication produced by closure; result = " + result);
+        }
+        return innerFunc;
+    }
+    var inner = outerFunc(2);
+    inner(10);
+</script>
+</body>
+</html>
